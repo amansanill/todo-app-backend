@@ -30,6 +30,11 @@ app.delete('/tasks/:id', (req, res) => {
   res.status(200).json({ message: 'Task deleted' });
 });
 
+// Test deployment route
+app.get('/test-deploy', (req, res) => {
+  res.send('Backend deployment successful! 🚀');
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
