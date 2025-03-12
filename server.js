@@ -27,7 +27,7 @@ app.post('/tasks', (req, res) => {
 app.delete('/tasks/:id', (req, res) => {
   const id = req.params.id;
   tasks = tasks.filter((task) => task.id !== id);
-  res.status(200).json({ message: 'Task deleted' });
+  res.status(200).json({ message: 'TASK deleted' });
 });
 
 app.listen(port, () => {
