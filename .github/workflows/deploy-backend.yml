@@ -42,4 +42,4 @@ jobs:
           key: ${{ secrets.EC2_PRIVATE_KEY }}
           script: |
             cd ~/todo-app-backend
-            pm2 restart todo-backend
+            pm2 restart todo-app-backend
